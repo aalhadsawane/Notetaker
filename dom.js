@@ -298,7 +298,23 @@ function viewNote(e){
         }  
     }
 
-    if(e.target.classList.contains('note-content')){
+    if(e.target.classList.contains('note')){
+
+        
+        if(e.target.firstChild.contentEditable=="false"){
+            if(e.target.lastElementChild.style.maxHeight == '0rem'){
+
+                e.target.lastElementChild.style.maxHeight = "8rem";
+
+            }else{
+            
+                e.target.lastElementChild.style.maxHeight = "0rem";
+
+            }          
+        }  
+    }
+
+    if(e.target.classList.contains('date')){
 
         if(e.target.contentEditable == "false"){
 
