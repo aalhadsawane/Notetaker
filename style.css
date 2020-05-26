@@ -1,0 +1,223 @@
+hr{
+    
+    height: 1px!important;
+    background-color: lightgray;
+    
+}
+
+.description-label{
+   
+   font-size: 1.5rem;
+
+   flex-basis: 20%;
+   overflow: -moz-hidden-unscrollable;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+      font-size: 1rem;
+    }
+    .description-label{
+   
+        font-size: 1.2rem;
+        flex-basis: 20%;
+    }
+  }
+
+input{
+    border: 1px solid lightgray;
+    flex-basis: 75%;
+    min-width: 2px;
+    
+    
+}
+textarea{
+    border: 1px solid lightgray;
+    flex-basis: 75%;
+    
+
+    overflow-y: scroll;
+    min-height: 4rem !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#noteform{
+    border: 1px solid rgba(201, 197, 197);
+    margin: 0;
+    padding: 2rem;
+    background-color: lightgray;
+}
+.formrow{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+#note_content{
+    height:12rem;
+    text-align: top;
+    padding: 0.2rem;
+}
+#note_submit{
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+#note-list{
+    margin: 0;
+    padding: 0;
+}
+
+#note-list li{
+    list-style: none;
+    
+}
+
+.nothing_here img{
+    width: 100%;
+    height: auto;
+}
+
+
+#jumbo_heading{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+#nothing_here{
+    display: block;
+}
+
+.note{
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    max-width: 100% !important;
+
+    
+}
+
+.note-content{
+    max-height: 8rem;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: 100% !important;
+    
+    transition: max-height 500ms ease-in-out;
+    /*This makes a new line when enter is hit*/
+    white-space: pre-wrap;
+
+    margin-top: 8px;
+    margin-right: 0.8rem;
+}
+
+
+.noteheader{
+    border-bottom: 1.8px solid lightgrey;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+
+}
+#note-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.note{
+    margin-right: 0.2rem;
+}
+
+.edit{
+    background-color: lightgray;
+    color: green;
+    border-radius: 100%;
+}
+
+i{
+    font-style: normal !important;
+}
+
+
+/*My scrollar :)*/
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(221, 221, 221);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(129, 128, 128);
+  }
+
+
+/*Edit content editable textbox*/
+[contenteditable] {
+    overflow-x: hidden;
+}  
+
+@media screen and (max-width: 700px) {
+    #noteform{
+        padding: 0.2rem;
+        font-size: medium;
+    }
+}
+
+.edit{
+    margin-right: 5px;
+}
+
+#nothing_here img{
+    max-height: 511px;
+}
+
+.date{
+    min-height: 1rem;
+    min-width: 1.5rem;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 5px;
+}
+
+#gotop{
+
+}
+
+footer{
+    min-width: 3rem;
+    padding: 1rem;
+}
+ footer p{
+
+    border-top: 1px solid lightgray;
+     margin: 0;
+
+ }
+
+footer .fas:hover{
+    text-decoration: none;
+}

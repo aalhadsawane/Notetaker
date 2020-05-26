@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="/fonts/fontawesome-free-5.3.1-web/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Make notes!!</title>
+  </head>
+  <body>
+    <header id="main-header" class="bg-light text-dark p-4 mb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <h1 id="header-title">NoteMaker.</h1>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <div class="row">
+                    <input type="text" class="form-control" id="filter" placeholder="&#xF002; Search notes..."  style="font-family: Arial, 'Font Awesome 5 Free'">
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    
+
+    <div class="container-fluid" id="add_notes">
+        <h2>
+           Add Note
+        </h2>
+        <form id="noteform">
+            <div class="formrow">
+                <label for="note-heading" class="description-label mr-2">Note Heading:</label>
+                <input type="text" placeholder="Title" id="note_heading" name="note-heading">
+            </div>
+            <div class="formrow">
+                <label for="content" class="description-label mr-2">Note Content:</label>
+                <textarea placeholder="Note Content" id="note_content" name="content"></textarea>
+            </div>
+            
+            <input type="submit" form="noteform" class="btn btn-dark" id="note_submit" value="Make Note">
+        </form>
+
+        <hr>
+    </div>
+
+    <div class="container-fluid">
+        <!--Show past notes-->
+        <h2>
+             Notes
+        </h2>
+
+
+        <ul id="note-list">
+            
+            
+        </ul>
+        <div class="card" id="nothing_here">
+            <img class="card-img-top" src="images/nothing_here.jpg" alt="Nothing here!!">
+            <div class="card-body">
+              <h5 class="card-title">Your notes appear here</h5>
+              <p class="card-text">Make notes and see them appear here! <br>
+                                  Give a title to your note and save them. If you ever need your notes you can always use the searchbar for searching them up</p>
+              <a href="#main-header" class="btn btn-primary">Add note</a>
+            </div>
+          </div>
+
+         
+
+        
+
+    </div>
+
+
+    <footer>
+      <div class="container-fluid">
+       
+          <a href="#main-header" class="fas fa-arrow-up float-right" id="gotop"></a>
+        
+             
+        
+        
+        <p>
+          See the <a href="usermanual.html">user manual</a> for using this simple application
+        </p>
+      </div>
+    
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="dom.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
